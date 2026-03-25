@@ -249,27 +249,27 @@ nav.scrolled {
 .hero-image {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
   aspect-ratio: 1/1.2;
-  margin: 0 auto;
+  margin: -40px auto 0; /* Shifted up by 40px */
 }
 
 .hero-image::before {
   content: '';
   position: absolute;
-  top: 20px;
-  right: -20px;
+  top: 15px;
+  right: -15px;
   width: 100%;
   height: 100%;
-  border: 2px solid var(--secondary-gold);
+  border: 1.5px solid var(--secondary-gold);
   border-radius: 30px;
   z-index: -1;
   transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-image:hover::before {
-  top: 40px;
-  right: -40px;
+  top: 25px;
+  right: -25px;
   opacity: 0.5;
 }
 
