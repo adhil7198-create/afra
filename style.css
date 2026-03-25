@@ -250,8 +250,9 @@ nav.scrolled {
   position: relative;
   width: 100%;
   max-width: 380px;
-  aspect-ratio: 1/1.2;
-  margin: -40px auto 0; /* Shifted up by 40px */
+  aspect-ratio: 1/1.3;
+  margin: -40px auto 0;
+  border-radius: 190px; /* High radius for oval shape */
 }
 
 .hero-image::before {
@@ -262,7 +263,7 @@ nav.scrolled {
   width: 100%;
   height: 100%;
   border: 1.5px solid var(--secondary-gold);
-  border-radius: 30px;
+  border-radius: 190px; /* Match image oval shape */
   z-index: -1;
   transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -277,7 +278,7 @@ nav.scrolled {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 190px; /* Match image oval shape */
   image-rendering: -webkit-optimize-contrast;
   filter: contrast(1.02) brightness(1.02);
   box-shadow: 0 30px 60px rgba(0,0,0,0.12);
